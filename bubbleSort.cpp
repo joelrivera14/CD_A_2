@@ -18,8 +18,10 @@ int main()
 void bubbleSort(std::vector<int> &arr)
 {
     int n = arr.size();
+    // or i < n - 1
     for (int i = 0; i < n; ++i)
     {
+        // j < n - i - 1
         for (int j = 0; j < n - 1; ++j)
         {
             if (arr[j] > arr[j + 1])
